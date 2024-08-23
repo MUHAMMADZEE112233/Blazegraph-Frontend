@@ -1,0 +1,159 @@
+/* Layout styling */
+
+/* Add padding to account for the height of the header and width of the sidebar */
+.content {
+  padding-top: 64px; /* Height of the AppBar (header) */
+  margin-left: 240px; /* Width of the Sidebar (if using a 240px sidebar) */
+  padding-bottom: 16px; /* Optional: Space at the bottom of the content */
+  padding-right: 16px; /* Optional: Space at the right of the content */
+  box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+/* Side Bar styling */
+.drawer {
+  width: 240px;
+}
+
+.drawer .MuiDrawer-paper {
+  width: 240px;
+  color: #a4a6b3;
+  background-color: #363740;
+  /* &:hover {
+    color: #a6b3a4;
+  } */
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 16px;
+  height: 64px; /* Ensure it matches the height of the Header */
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.brand-name {
+  /* font-weight: bold !important; */
+  color: #a4a6b3 !important;
+}
+
+.nav-links {
+  margin-top: 16px; /* Adds spacing between the "Hike Lab" section and the navigation links */
+}
+
+.nav-item {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.nav-item .MuiListItemIcon-root {
+  color: #a4a6b3; /* Change icon color when selected */
+  font-size: 16px;
+}
+
+.nav-item .MuiListItemText-root {
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.08px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+
+.nav-item:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.nav-item.selected {
+  background-color: #3f4049; /* Change background color when selected */
+  color: #94c3f7; /* Change text color when selected */
+}
+
+.nav-item.selected .MuiListItemIcon-root {
+  /* Ensure that the header has a fixed position to stay on top */
+  /* .app-bar {
+      Full width minus the sidebar width
+      z-index: 1201;
+    } */
+  color: #61748e; /* Change icon color when selected */
+}
+
+.nav-item.selected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px; /* Width of the vertical bar */
+  background-color: #dde2ff;
+}
+
+/* Header app-bar styling */
+
+.app-bar {
+  background-color: transparent !important;
+  color: #000;
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: calc(100% - 240px); */
+  /* z-index: 1201; */
+}
+
+.nav-label {
+  color: #000;
+  font-weight: bold;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-and-name {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  color: #000;
+  margin-right: 8px;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #000;
+}
+
+.vertical-divider {
+  background-color: #000 !important; /* Ensure the divider is visible */
+  height: 30px !important; /* Match the height of the avatar */
+  margin-left: 16px !important;
+  margin-right: 16px !important;
+  align-self: center !important;
+}
+
+/* Footer styling */
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

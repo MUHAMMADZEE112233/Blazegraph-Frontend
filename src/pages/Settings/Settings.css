@@ -1,0 +1,22 @@
+.settings-container {
+  padding: 16px;
+}
+
+.settings-section {
+  margin-bottom: 24px;
+}
+
+.section-icon {
+  margin-left: 8px;
+  color: #737b7d; /* Adjust color as needed */
+}
+
+.section-heading {
+  font-weight: bold;
+}
+
+.settings-card {
+  padding: 16px;
+  background-color: #f5f5f5;
+  text-align: start;
+}

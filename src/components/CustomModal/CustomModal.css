@@ -1,0 +1,32 @@
+.custom-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* Ensure it's not transparent */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Slight shadow for visibility */
+    border-radius: 8px;
+    padding: 24px;
+    width: auto;
+    max-width: 90vw; /* Ensure it doesn't overflow horizontally */
+    max-height: 90vh; /* Ensure it doesn't overflow vertically */
+    overflow-y: auto;
+  }
+  
+  .custom-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px; /* Space between header and content */
+  }
+  
+  .custom-modal-content {
+    margin-top: 16px;
+  }
+  
+  .custom-modal-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px; /* Space between content and footer */
+  }
+  

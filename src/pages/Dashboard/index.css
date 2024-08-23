@@ -1,0 +1,16 @@
+.dashboard-container {
+    padding: 20px;
+  }
+  
+  .dashboard-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-container pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+  
